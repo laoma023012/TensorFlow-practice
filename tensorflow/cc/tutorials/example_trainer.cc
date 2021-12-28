@@ -55,7 +55,7 @@ GraphDef CreateGraphDef() {
 
   // A = [3 2; -1 0].  Using Const<float> means the result will be a
   // float tensor even though the initializer has integers.
-  auto a = Const<float>(root, {{3, 2}, {-1, 0}});
+  auto a = Const<float>(root, {{34, 200}, {-1, 0}});
 
   // x = [1.0; 1.0]
   auto x = Const(root.WithOpName("x"), {{1.f}, {1.f}});
